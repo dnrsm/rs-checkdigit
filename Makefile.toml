@@ -1,0 +1,17 @@
+
+[tasks.fmt]
+install_crate = "rustfmt"
+command = "cargo"
+args = ["fmt", "--", "--emit=files"]
+
+[tasks.build]
+category = "develop"
+description = "debug用のビルドを実行する"
+command = "cargo"
+args = ["build"]
+
+[tasks.build-release]
+category = "develop"
+description = "debug用のビルドを実行する"
+command = "cargo"
+args = ["build", "--release"]
