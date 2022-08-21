@@ -1,17 +1,5 @@
 pub mod util {
     pub use crate::error::*;
-    // #[derive(Clone, Eq, PartialEq, Ord, PartialOrd, Hash, Debug)]
-
-    // pub fn remove_last_val(val: &str) -> String {
-    //     let mut val_str: String = val.to_string();
-    //     val_str.pop().unwrap().to_string();
-    //     return val_str;
-    // }
-
-    // pub fn get_last_val(val: &str) -> String {
-    //     let result = val.chars().last().unwrap().to_string();
-    //     return result;
-    // }
 
     pub fn char_to_int(val: char) -> u32 {
         return val.to_digit(10).unwrap();
